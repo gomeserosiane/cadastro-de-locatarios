@@ -1,197 +1,197 @@
- .quantity {
-     display: flex;
-     justify-content: space-between;
-     gap: 24px;
-     align-items: center;
-     padding: 35px 0
- }
+.quantity {
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+  align-items: center;
+  padding: 35px 0;
+}
 
- .quantity h2 {
-     margin-bottom: 6px
- }
+.quantity h2 {
+  margin-bottom: 6px;
+}
 
- .quantity p:last-child {
-     color: var(--muted);
-     font-size: 14px;
-     margin-bottom: 0
- }
+.quantity p:last-child {
+  color: var(--muted);
+  font-size: 14px;
+  margin-bottom: 0;
+}
 
- .quantity fieldset {
-     border: 0;
-     display: flex;
-     padding: 0;
-     margin: 0;
-     gap: 8px;
- }
+.quantity fieldset {
+  border: 0;
+  display: flex;
+  padding: 0;
+  margin: 0;
+  gap: 8px;
+}
 
- .quantity label {
-     position: relative
- }
+.quantity label {
+  position: relative;
+}
 
- .quantity input {
-     position: absolute;
-     opacity: 0
- }
+.quantity input {
+  position: absolute;
+  opacity: 0;
+}
 
- .quantity span {
-     display: block;
-     min-width: 96px;
-     text-align: center;
-     background: white;
-     border: 1px solid var(--line);
-     border-radius: 10px;
-     padding: 10px;
-     font-size: 20px;
-     font-weight: 700;
-     cursor: pointer;
- }
+.quantity span {
+  display: block;
+  min-width: 96px;
+  text-align: center;
+  background: white;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  padding: 10px;
+  font-size: 20px;
+  font-weight: 700;
+  cursor: pointer;
+}
 
- .quantity small {
-     display: block;
-     font-size: 11px;
-     font-weight: 400
- }
+.quantity small {
+  display: block;
+  font-size: 11px;
+  font-weight: 400;
+}
 
- .quantity input:checked+span {
-     background: var(--pale);
-     border: 2px solid var(--blue);
-     padding: 9px;
-     color: var(--blue)
- }
+.quantity input:checked+span {
+  background: var(--pale);
+  border: 2px solid var(--blue);
+  padding: 9px;
+  color: var(--blue);
+}
 
- .quantity input:focus-visible+span {
-     outline: 3px solid var(--blue);
-     outline-offset: 3px
- }
+.quantity input:focus-visible+span {
+  outline: 3px solid var(--blue);
+  outline-offset: 3px;
+}
 
- .tenant {
-     background: white;
-     border: 1px solid var(--line);
-     border-radius: var(--radius);
-     margin-bottom: 24px;
-     overflow: hidden
- }
+.tenant {
+  background: white;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  margin-bottom: 24px;
+  overflow: hidden;
+}
 
- .card-head {
-     padding: 24px 30px;
-     border-bottom: 1px solid var(--line);
-     display: flex;
-     align-items: center;
-     gap: 16px
- }
+.card-head {
+  padding: 24px 30px;
+  border-bottom: 1px solid var(--line);
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
 
- .card-head .number {
-     display: grid;
-     place-items: center;
-     background: var(--pale);
-     color: var(--blue);
-     width: 44px;
-     height: 44px;
-     border-radius: 12px;
-     font-weight: 700
- }
+.card-head .number {
+  display: grid;
+  place-items: center;
+  background: var(--pale);
+  color: var(--blue);
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  font-weight: 700;
+}
 
- .card-head h2 {
-     font-size: 20px;
-     margin: 0
- }
+.card-head h2 {
+  font-size: 20px;
+  margin: 0;
+}
 
- .card-head p {
-     font-size: 12px;
-     color: var(--muted);
-     margin: 2px 0 0
- }
+.card-head p {
+  font-size: 12px;
+  color: var(--muted);
+  margin: 2px 0 0;
+}
 
- .card-body {
-     padding: 28px 30px
- }
+.card-body {
+  padding: 28px 30px;
+}
 
- .section-label {
-     font-size: 11px;
-     font-weight: bold;
-     letter-spacing: 1.6px;
-     margin-bottom: 20px;
-     color: var(--blue)
- }
+.section-label {
+  font-size: 11px;
+  font-weight: bold;
+  letter-spacing: 1.6px;
+  margin-bottom: 20px;
+  color: var(--blue);
+}
 
- .fields {
-     display: grid;
-     grid-template-columns: repeat(6, minmax(0, 1fr));
-     gap: 20px 18px
- }
+.fields {
+  display: grid;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  gap: 20px 18px;
+}
 
- .field {
-     grid-column: span 2;
-     min-width: 0
- }
+.field {
+  grid-column: span 2;
+  min-width: 0;
+}
 
- .field.wide {
-     grid-column: span 6
- }
+.field.wide {
+  grid-column: span 6;
+}
 
- .field.half {
-     grid-column: span 3
- }
+.field.half {
+  grid-column: span 3;
+}
 
- .field label {
-     display: block;
-     font-size: 13px;
-     font-weight: 600;
-     margin-bottom: 7px
- }
+.field label {
+  display: block;
+  font-size: 13px;
+  font-weight: 600;
+  margin-bottom: 7px;
+}
 
- .field input,
- .field select {
-     width: 100%;
-     min-width: 0;
-     height: 48px;
-     padding: 10px 12px;
-     border: 1px solid #bdcedb;
-     border-radius: 8px;
-     background: #fff;
-     color: var(--ink);
-     transition: border-color .2s, box-shadow .2s
- }
+.field input,
+.field select {
+  width: 100%;
+  min-width: 0;
+  height: 48px;
+  padding: 10px 12px;
+  border: 1px solid #bdcedb;
+  border-radius: 8px;
+  background: #fff;
+  color: var(--ink);
+  transition: border-color .2s, box-shadow .2s;
+}
 
- .field input:hover,
- .field select:hover {
-     border-color: var(--blue)
- }
+.field input:hover,
+.field select:hover {
+  border-color: var(--blue);
+}
 
- .field input:focus,
- .field select:focus {
-     border-color: var(--blue);
-     box-shadow: 0 0 0 3px var(--pale)
- }
+.field input:focus,
+.field select:focus {
+  border-color: var(--blue);
+  box-shadow: 0 0 0 3px var(--pale);
+}
 
- [aria-invalid=true] {
-     border-color: var(--error) !important
- }
+[aria-invalid=true] {
+  border-color: var(--error) !important;
+}
 
- .finish {
-     padding: 10px 0
- }
+.finish {
+  padding: 10px 0;
+}
 
- .privacy {
-     background: var(--pale);
-     border-radius: 14px;
-     padding: 24px
- }
+.privacy {
+  background: var(--pale);
+  border-radius: 14px;
+  padding: 24px;
+}
 
- .privacy>p {
-     font-size: 13px;
-     color: var(--muted)
- }
+.privacy>p {
+  font-size: 13px;
+  color: var(--muted);
+}
 
- .submit-row {
-     display: flex;
-     align-items: center;
-     justify-content: space-between;
-     gap: 20px;
-     margin-top: 28px
- }
+.submit-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  margin-top: 28px;
+}
 
- .submit-row>span {
-     font-size: 13px;
-     color: var(--muted)
- }
+.submit-row>span {
+  font-size: 13px;
+  color: var(--muted);
+}

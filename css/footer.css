@@ -1,1 +1,19 @@
-footer{border-top:1px solid var(--line);background:white;text-align:center;padding:32px 24px;color:var(--muted);font-size:12px}footer strong{color:var(--ink);font-size:15px}footer p{margin:6px auto;max-width:850px}
+footer {
+  border-top: 1px solid var(--line);
+  background: #7fbede;
+  text-align: center;
+  padding: 32px 24px;
+  color: var(--muted);
+  font-size: 12px;
+}
+
+footer strong {
+  color: var(--ink);
+  font-size: 18px;
+}
+
+footer p {
+  margin: 6px auto;
+  max-width: 850px;
+  color: rgb(41, 41, 41);
+}

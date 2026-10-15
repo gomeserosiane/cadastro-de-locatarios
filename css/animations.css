@@ -1,1 +1,42 @@
-@keyframes enter{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}header,.tenant,dialog[open]{animation:enter .35s ease both}button,.primary{transition:background .2s,transform .2s}button:active,.primary:active{transform:translateY(1px)}.tenant.removing{opacity:0;transform:translateY(8px);transition:opacity .18s,transform .18s}@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+@keyframes enter {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+header,
+.tenant,
+dialog[open] {
+  animation: enter .35s ease both;
+}
+
+button,
+.primary {
+  transition: background .2s,transform .2s;
+}
+
+button:active,
+.primary:active {
+  transform: translateY(1px);
+}
+
+.tenant.removing {
+  opacity: 0;
+  transform: translateY(8px);
+  transition: opacity .18s,transform .18s;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation: none!important;
+    transition: none!important;
+    scroll-behavior: auto!important;
+  }
+}

@@ -1,11 +1,12 @@
 <!doctype html>
 <html lang="pt-BR">
-
-<head>
+  <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="description"
-        content="Cadastro de locatários da ADM Gomes & Rosiane. Preencha seus dados e prepare seu atendimento pelo WhatsApp.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta
+      name="description"
+      content="Cadastro de locatários da ADM Gomes & Rosiane. Preencha seus dados e prepare seu atendimento pelo WhatsApp."
+    >
     <meta name="referrer" content="no-referrer">
     <title>ADM Gomes & Rosiane | Cadastro de Locatários</title>
     <link rel="icon" href="assets/icons/favicon.svg">
@@ -16,69 +17,122 @@
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/animations.css">
     <link rel="stylesheet" href="css/responsive.css">
-</head>
+  </head>
 
-<body><a class="skip" href="#cadastro">Ir para o cadastro</a>
+  <body>
+    <a class="skip" href="#cadastro">Ir para o cadastro</a>
+
     <header>
-        <div class="header-inner">
-            <div class="identity"><img class="logo" src="assets/logo-adm.png"
-                    alt="Logotipo da ADM Gomes & Rosiane">
-                <div><strong>ADM Gomes & Rosiane</strong><span>Cadastro de Locatários</span></div>
-            </div><span class="header-note">ATENDIMENTO IMOBILIÁRIO</span>
+      <div class="header-inner">
+        <div class="identity">
+          <img
+            class="logo"
+            src="assets/logo-adm.png"
+            alt="Logotipo da ADM Gomes & Rosiane"
+          >
+          <div>
+            <strong>Gomes & Rosiane ADM e Corretora de Seguros e Imóveis</strong>
+            <span>Cadastro de Locatários</span>
+          </div>
         </div>
+        <span class="header-note">ATENDIMENTO IMOBILIÁRIO</span>
+      </div>
     </header>
-    <main>
-        <form id="cadastro" novalidate>
-            <section class="quantity">
-                <div>
-                    <h2>Locatários</h2>
-                    <p>Selecione a quantidade de locatários para este cadastro.</p>
-                </div>
-                <fieldset>
-                    <legend class="sr-only">Quantidade de locatários</legend><label><input type="radio" name="quantity"
-                            value="1" checked><span>1 <small>locatário</small></span></label><label><input type="radio"
-                            name="quantity" value="2"><span>2 <small>locatários</small></span></label><label><input
-                            type="radio" name="quantity" value="3"><span>3 <small>locatários</small></span></label>
-                </fieldset>
-            </section>
-            <div id="tenants"></div>
-            <section class="finish">
-                <div class="privacy"><strong>Seus dados merecem cuidado.</strong>
-                    <p>Os dados ficam temporariamente nesta página, sem armazenamento permanente. A
-                        consulta do CEP envia somente o CEP à API ViaCEP, para preencher os dados de endereço com mais
-                        facilidade. Ao abrir o WhatsApp, os dados preenchidos passam
-                        a fazer parte do link e podem constar no histórico do navegador.</p><label class="check"><input type="checkbox" id="consent"
-                            required> Li o aviso e autorizo preparar meus dados para o atendimento da ADM Gomes &
-                        Rosiane pelo WhatsApp.</label>
-                    <p id="consent-error" class="error" role="alert"></p>
-                </div>
-                <div class="submit-row"><span>Revise as informações antes de continuar.</span><button type="submit"
-                        class="primary">Enviar dados <span aria-hidden="true">↗</span></button></div><button
-                    type="button" id="clear" class="text-button">Limpar cadastro</button>
-            </section>
-        </form>
-    </main>
-    <footer><strong>ADM Gomes & Rosiane</strong>
-        <p>Endereço: Rua dos Mundurucus, 2523, Vila Sol, Casa 78, CEP: 66040-033, Bairro da Cremação – Belém/PA</p>
-        <p>CNPJ: 21.905.325/0001-93 – Fone: (91) 98164-3641</p>
-        <p>Email: <a href="mailto:gomes852@hotmail.com">gomes852@hotmail.com</a></p>
-    </footer>
-    <dialog id="review" aria-labelledby="review-title">
-        <div class="dialog-head">
-            <button type="button" id="close-review"
-                aria-label="Fechar revisão">×</button>
-        </div>
-        <h2 id="review-title">Tudo pronto para continuar.</h2>
-        <p>Mensagem preparada! No WhatsApp, confira e envie os dados do cadastro.</p>
-        <details>
-            <summary>Revisar mensagem completa</summary>
-            <pre id="message-preview"></pre>
-        </details>
-        <a class="primary" id="open-whatsapp" target="_blank" rel="noopener noreferrer"
-            referrerpolicy="no-referrer">Abrir WhatsApp ↗</a>
-        <p class="hint">A abertura da conversa não confirma o envio ou a entrega.</p>
-    </dialog>
-    <script type="module" src="js/main.js"></script>
-</body>
 
+    <main>
+      <form id="cadastro" novalidate>
+        <section class="quantity">
+          <div>
+            <h2>Locatários</h2>
+            <p>Selecione a quantidade de locatários para este cadastro.</p>
+          </div>
+
+          <fieldset>
+            <legend class="sr-only">Quantidade de locatários</legend>
+
+            <label>
+              <input type="radio" name="quantity" value="1" checked>
+              <span>1 <small>locatário</small></span>
+            </label>
+
+            <label>
+              <input type="radio" name="quantity" value="2">
+              <span>2 <small>locatários</small></span>
+            </label>
+
+            <label>
+              <input type="radio" name="quantity" value="3">
+              <span>3 <small>locatários</small></span>
+            </label>
+          </fieldset>
+        </section>
+
+        <div id="tenants"></div>
+
+        <section class="finish">
+          <div class="privacy">
+            <strong>Seus dados merecem cuidado.</strong>
+            <p>
+              Os dados ficam temporariamente nesta página, sem armazenamento permanente.
+              A consulta do CEP envia somente o CEP à API ViaCEP, para preencher os dados
+              de endereço com mais facilidade. Ao abrir o WhatsApp, os dados preenchidos
+              passam a fazer parte do link e podem constar no histórico do navegador.
+            </p>
+            <label class="check">
+              <input type="checkbox" id="consent" required>
+              Li o aviso e autorizo preparar meus dados para o atendimento da ADM Gomes &
+              Rosiane pelo WhatsApp.
+            </label>
+            <p id="consent-error" class="error" role="alert"></p>
+          </div>
+
+          <div class="submit-row">
+            <span>Revise as informações antes de continuar.</span>
+            <button type="submit" class="primary">
+              Enviar dados
+              <span aria-hidden="true">↗</span>
+            </button>
+          </div>
+
+          <button type="button" id="clear" class="text-button">
+            Limpar cadastro
+          </button>
+        </section>
+      </form>
+    </main>
+
+    <footer>
+      <strong>Gomes & Rosiane ADM e Corretora de Seguros e Imóveis</strong>
+      <p>
+        Endereço: Rua dos Mundurucus, 2523, Vila Sol, Casa 78, CEP: 66040-033,
+        Bairro da Cremação – Belém/PA
+      </p>
+      <p>CNPJ: 21.905.325/0001-93 – Fone: (91) 98164-3641</p>
+      <p>Email: <a href="mailto:gomes852@hotmail.com">gomes852@hotmail.com</a></p>
+    </footer>
+
+    <dialog id="review" aria-labelledby="review-title">
+      <div class="dialog-head">
+        <button type="button" id="close-review" aria-label="Fechar revisão">×</button>
+      </div>
+      <h2 id="review-title">Tudo pronto para continuar.</h2>
+      <p>Mensagem preparada! No WhatsApp, confira e envie os dados do cadastro.</p>
+      <details>
+        <summary>Revisar mensagem completa</summary>
+        <pre id="message-preview"></pre>
+      </details>
+      <a
+        class="primary"
+        id="open-whatsapp"
+        target="_blank"
+        rel="noopener noreferrer"
+        referrerpolicy="no-referrer"
+      >
+        Abrir WhatsApp ↗
+      </a>
+      <p class="hint">A abertura da conversa não confirma o envio ou a entrega.</p>
+    </dialog>
+
+    <script type="module" src="js/main.js"></script>
+  </body>
 </html>

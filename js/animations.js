@@ -1,1 +1,11 @@
-export function leave(card) { return new Promise(resolve => { if (matchMedia('(prefers-reduced-motion: reduce)').matches) { resolve(); return } card.classList.add('removing'); setTimeout(resolve, 180) }) }
+export function leave(card) {
+  return new Promise((resolve) => {
+    if (matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      resolve();
+      return;
+    }
+
+    card.classList.add('removing');
+    setTimeout(resolve, 180);
+  });
+}
